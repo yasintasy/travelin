@@ -10,6 +10,7 @@
   --input-color: rgb(239, 239, 239);
   --body-color: rgb(240, 240, 246);
   --card-bg-color: rgb(225, 225, 235);
+  --card-hover: rgb(255, 255, 255);
 }
 
 .header {

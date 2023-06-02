@@ -1,1 +1,134 @@
-/*# sourceMappingURL=main.css.map */
+:root {
+  --primary-color: hsl(199, 100%, 33%);
+  --secondary-color: hsl(187, 85%, 43%);
+  --gradient-color: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(201, 33%, 16%);
+  --text-color: hsl(240, 4%, 36%);
+  --white-deam-color: hsl(0, 0%, 93%);
+  --grey-color: rgb(190, 190, 190);
+  --input-color: rgb(239, 239, 239);
+  --body-color: rgb(240, 240, 246);
+  --card-bg-color: rgb(225, 225, 235);
+  --card-hover: rgb(255, 255, 255);
+}
+
+.main {
+  width: 100%;
+}
+.main .sec-title .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--text-color);
+  margin: 1rem 0;
+  z-index: 2;
+}
+.main .sec-title .title::after {
+  position: absolute;
+  content: "";
+  background: var(--secondary-color);
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+}
+.main .sec-content {
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.main .sec-content .single-destination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--card-bg-color);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+}
+.main .sec-content .single-destination:hover {
+  background: var(--card-hover);
+  box-shadow: 0 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.main .sec-content .single-destination .img-div {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .sec-content .single-destination .img-div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .sec-content .single-destination .img-div:hover img {
+  transform: scale(1.1);
+}
+.main .sec-content .single-destination .card-info {
+  padding: 1rem;
+}
+.main .sec-content .single-destination .card-info .dest-title {
+  color: var(--black-color);
+  font-size: 1.25rem;
+}
+.main .sec-content .single-destination .card-info .continent {
+  gap: 0.5rem;
+}
+.main .sec-content .single-destination .card-info .continent .icon {
+  color: var(--text-color);
+  font-size: 18px;
+}
+.main .sec-content .single-destination .card-info .continent .name {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+.main .sec-content .single-destination .card-info .fees {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--grey-color);
+  border-bottom: 1.5px solid var(--grey-color);
+}
+.main .sec-content .single-destination .card-info .fees .grade {
+  color: var(--text-color);
+  max-width: 100px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .sec-content .single-destination .card-info .fees .grade small {
+  text-align: center;
+  background: var(--gradient-color);
+  border-radius: 1rem;
+  color: var(--white-color);
+  padding: 1px 10px;
+  font-size: 10px;
+}
+.main .sec-content .single-destination .card-info .fees .price {
+  font-size: 2rem;
+  color: var(--black-color);
+}
+.main .sec-content .single-destination .card-info .desc {
+  font-size: 13.5px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.main .sec-content .single-destination .card-info .btn {
+  margin-top: 1rem;
+  color: var(--white-color);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.main .sec-content .single-destination .card-info .btn .icon {
+  align-self: center;
+  font-size: 18px;
+}/*# sourceMappingURL=main.css.map */
