@@ -152,4 +152,62 @@
 }
 .home .home-content .home-footer-icons .icon:hover {
   color: var(--primary-color);
+}
+
+@media screen and (min-width: 660px) {
+  .home .home-content .card-div {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .home .home-content .text-div .small-text {
+    font-size: 16px;
+  }
+  .home .home-content .text-div .home-title {
+    position: relative;
+    font-size: 2.3rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .home .home-content .text-div .home-title::after {
+    position: absolute;
+    content: "";
+    background: var(--secondary-color);
+    height: 5px;
+    width: 145px;
+    right: 0px;
+    bottom: 0;
+    z-index: -1;
+  }
+  .home .home-content .card-div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 940px) {
+  .home {
+    height: 85vh;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home {
+    height: 95vh;
+  }
+  .home .home-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .home .home-content .card-div {
+    padding: 2rem 1rem;
+  }
+  .home .home-content .card-div .input {
+    margin-bottom: 1rem;
+  }
+  .home .home-content .card-div .search-options {
+    bottom: -1rem;
+    padding: 8px 1rem;
+  }
+  .home .home-content .card-div .search-options span {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=home.css.map */
