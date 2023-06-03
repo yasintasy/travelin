@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
+
+// icons
 import { MdTravelExplore } from 'react-icons/md';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { TbGridDots } from 'react-icons/tb';

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './main.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 // icons
 import { HiOutlineLocationMarker } from 'react-icons/hi';
@@ -113,11 +115,16 @@ const Data = [
 ];
 
 const Main = () => {
+    // react hook to add aos
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
+
     return (
         <section className='main container section'>
 
             <div className="sec-title">
-                <h3 className="title">Most visited destinations</h3>
+                <h3 data-aos="fade-right" className="title">Most visited destinations</h3>
             </div>
 
             <div className="sec-content grid">
@@ -125,7 +132,7 @@ const Main = () => {
                 {
                     Data.map(({ id, imgSrc, destTitle, location, grade, fees, description }) => {
                         return (
-                            <div key={id} className="single-destination">
+                            <div key={id} data-aos="fade-up" className="single-destination">
 
                                 <div className="img-div">
                                     <img src={imgSrc} alt={destTitle} />

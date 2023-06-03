@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './footer.css';
 import videoFooter from '../../assets/video-1.mp4';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+// icons
 import { FiSend } from 'react-icons/fi';
 import { MdOutlineTravelExplore } from 'react-icons/md';
 import { AiOutlineTwitter } from 'react-icons/ai';
@@ -10,6 +14,11 @@ import { FaTripadvisor } from 'react-icons/fa';
 import { FiChevronRight } from 'react-icons/fi';
 
 const Footer = () => {
+    // react hook to add aos
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
+
     return (
         <section className='footer'>
             <div className="video-div">
@@ -18,14 +27,14 @@ const Footer = () => {
 
             <div className="sec-content container">
                 <div className="contact-div flex">
-                    <div className="text">
+                    <div data-aos="fade-up" className="text">
                         <small>KEEP IN TOUCH</small>
                         <h2>Travel with us</h2>
                     </div>
 
                     <div className="input-div flex">
-                        <input type="text" placeholder='Enter your email address' />
-                        <button className="btn flex" type='submit'>
+                        <input data-aos="fade-up" type="text" placeholder='Enter your email address' />
+                        <button data-aos="fade-up" className="btn flex" type='submit'>
                             SEND <FiSend className='icon' />
                         </button>
                     </div>
@@ -37,11 +46,11 @@ const Footer = () => {
                             <a href="#" className='logo flex'><MdOutlineTravelExplore className='icon' /> Travelin</a>
                         </div>
 
-                        <div className="footer-paragraph">
+                        <div data-aos="fade-up" className="footer-paragraph">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laboriosam quo nemo culpa pariatur natus. Nihil quasi ex accusamus cupiditate doloribus sunt ipsam veritatis. Modi nam vitae accusamus soluta veniam?
                         </div>
 
-                        <div className="footer-socials flex">
+                        <div data-aos="fade-up" className="footer-socials flex">
                             <AiOutlineTwitter className='icon' />
                             <AiFillYoutube className='icon' />
                             <AiFillInstagram className='icon' />
@@ -52,7 +61,7 @@ const Footer = () => {
                     <div className="footer-links grid">
 
                         {/* group  one */}
-                        <div className="link-group">
+                        <div data-aos="fade-up" data-aos-duration="4000" className="link-group">
                             <span className="group-title">
                                 OUR AGENCY
                             </span>
@@ -80,7 +89,7 @@ const Footer = () => {
                         </div>
 
                         {/* group  two */}
-                        <div className="link-group">
+                        <div data-aos="fade-up" data-aos-duration="4000" className="link-group">
                             <span className="group-title">
                                 PARTNERS
                             </span>
@@ -108,7 +117,7 @@ const Footer = () => {
                         </div>
 
                         {/* group  three */}
-                        <div className="link-group">
+                        <div data-aos="fade-up" data-aos-duration="4000" className="link-group">
                             <span className="group-title">
                                 LAST MINUTE
                             </span>
