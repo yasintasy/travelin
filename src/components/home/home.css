@@ -31,7 +31,7 @@
   z-index: 1;
   mix-blend-mode: hard-light;
 }
-.home video {
+.home .banner {
   position: absolute;
   height: 100%;
   width: 100%;

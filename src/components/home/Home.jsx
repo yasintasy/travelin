@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './home.css';
-import video from '../../assets/video-2.mp4';
+import banner from '../../assets/banner.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -22,7 +22,7 @@ const Home = () => {
     return (
         <section className="home">
             <div className="overlay"></div>
-            <video src={video} muted autoPlay loop type="video/mp4"></video>
+            <img className='banner' src={banner} alt="" />
 
             <div className="home-content container">
                 <div className="text-div">

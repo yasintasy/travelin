@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './footer.css';
-import videoFooter from '../../assets/video-1.mp4';
+import banner2 from '../../assets/banner-2.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -21,8 +21,8 @@ const Footer = () => {
 
     return (
         <section className='footer'>
-            <div className="video-div">
-                <video src={videoFooter} loop autoPlay muted type="video/mp4"></video>
+            <div className="banner-div">
+                <img className='banner' src={banner2} alt="" />
             </div>
 
             <div className="sec-content container">

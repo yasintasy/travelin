@@ -22,17 +22,17 @@
   justify-content: center;
   margin: auto;
 }
-.footer .video-div {
+.footer .banner-div {
   position: absolute;
   height: 100%;
   width: 100%;
 }
-.footer .video-div video {
+.footer .banner-div .banner {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.footer .video-div::after {
+.footer .banner-div::after {
   content: "";
   position: absolute;
   background: rgba(10, 84, 107, 0.307);
